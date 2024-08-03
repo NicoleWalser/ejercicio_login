@@ -1,22 +1,26 @@
+
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=, initial-scale=1.0">
-    <title>Document</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio de Sesión</title>
+    <link rel="stylesheet" href="etilo.css"> 
+    <script src="login.js"></script> 
 </head>
 <body>
-    <form action="formilario">
-        <div class="formulario_login">
-            <h1>login</h1>
-            <label for="nombre">Nombre</label>
-            <input type="text" name="nombre" id="nombre">
-            <label for="">Password</label>
-            <input type="password" name="password" id="password">
-            <input type="submit" value="entrar">
+    <div class="login-container">
+        <h2>Inicio de Sesión</h2>
+        <form id="loginForm">
+            <label for="usuario">Nombre de Usuario:</label>
+            <input type="text" id="usuario" name="usuario" required>
             
-        </div>
-    </form>
-    
+            <label for="contraseña">Contraseña:</label>
+            <input type="password" id="contraseña" name="contraseña" required>
+            
+            <button type="submit" id="botonlogin">Iniciar Sesión</button>
+        </form>
+    </div>
+    <p id="error-message"></p>
 </body>
 </html>
